@@ -1,0 +1,36 @@
+img{
+    width: 200px;
+    height: auto;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: space-between;
+    flex: 1;
+}
+.row,
+.underheader,
+.homelinks,
+.header{
+    display: flex;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
