@@ -2,18 +2,23 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 body{
     display: flex;
     margin: 0;
     padding: 0;
-    flex: 1;
-    flex-wrap: wrap;
-
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 img{
     width: 150px;
+    height: auto;
+}
+img.widepic{
+    border: solid 2px lightblue;
+    width: 450px;
     height: auto;
 }
 .column{
@@ -26,26 +31,28 @@ img{
     justify-content: space-between;
     align-items: center;
     background-color: #1f2937;
-    height: 100px;
+    height: 10%;
     padding-right: 15%;
     padding-left: 15%;
     color: aliceblue;
 }
 .under_header{
     display: flex;
-    height: 150px;
-    align-items: center;
-    justify-content: center;
+    height: 25%;
+    gap: 2rem;
     background-color: #1f2937;
     padding-bottom: 25px;
     color: white;
     padding-right: 15%;
     padding-left: 15%;
+    align-items: center;
+    justify-content: space-evenly;
+   
     }
 .midcontent{
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 40%;
     align-items: center;
     justify-content: center;
     background-color: white;
@@ -60,8 +67,11 @@ img{
 .quote{
     display: flex;
     flex-direction: column;
-    height: 150px;
+    height: 30%;
     background-color: #e5e7eb;
+    font-size: 36px;
+    font-family: light italic, 'Times New Roman', Times, serif;
+    color: #1f2937;
     align-items: center;
     padding-right: 15%;
     padding-left: 15%;
@@ -86,4 +96,24 @@ img{
     padding-right: 15%;
     padding-left: 15%;
     
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    font-size: 24px;
+    color: #f9faf8;
+}
+.firsttile{
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
 }
